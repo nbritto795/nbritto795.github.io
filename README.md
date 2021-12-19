@@ -21,3 +21,8 @@ we will create a top 10 list!
 Setup:\
 First we import the libraries that we will need, this includes pandas, matplotlib, seaborn, sklearn,
 and statsmodels.\
+
+Data Source:\
+To get data on NBA players there are actually a decent amount of resources, but for this project, There were 2 main sources used:
+https://www.kaggle.com/drgilermo/nba-players-stats?select=Seasons_Stats.csv and https://www.basketball-reference.com/awards/mvp.html \
+The first source is to give us basic stats on all the NBA players from 1950 to 2017, the second provides our MVP voting data since 1955.
