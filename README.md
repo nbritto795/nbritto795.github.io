@@ -39,16 +39,16 @@ Once I had trained my data and tested it to look at the accuracy, I then shifted
 
 ## Part 5 - Insights
 The results from the linear regression predictions:
-1. LeBron James \
-2. Michael Jordan \
-3. David Robinson \
-4. Kevin Durant \
-5. Larry Bird \
-6. Karl Malone \
-7. Charles Barkley \
-8. James Harden \
-9. Stephen Curry \
-10. Anthony Davis \
+1. LeBron James 
+2. Michael Jordan 
+3. David Robinson 
+4. Kevin Durant 
+5. Larry Bird 
+6. Karl Malone 
+7. Charles Barkley 
+8. James Harden 
+9. Stephen Curry 
+10. Anthony Davis 
 
 This is a respectable list and though it differs from my personal opinion, there were some interesting takeaways when building this. First, was the breakdown of the stats and which ones impacted the rank the most. Interestingly it wasn't points, it was an advanced statistic called win shares per 48 which is a metric that estimates the number of wins a player produces for their team. This makes sense as winning games is the ultimate goal and the ability to provide your team with wins on a 48 minute basis analyzes the most efficient helpful players. This is backed up by history as only 2 players have ever won the MVP award with a team that had a losing record. Other important stats were points scored per game rebounds, assists, and blocks. \Interestingly, stats such as percentages (field goal percentage) were not big influencers and point to the idea that players don't necessarily have to be the most efficient to be the most valuable player, they need to have output and win games. In the end, the players with the highest win shares and highest point, rebound and assist averages topped the list. Another interesting find was that there were many players with high point averages that did not have a high win share per 48. This would indicate that although the player was scoring points they were not helping their team win, this could be because they are very inefficient when it comes to scoring, that they are able to score but do not make their team better, or that their surrounding team is not very good.\
 Another observation during the linear regression analysis was the low R-squared value, this indicates that our predicted values don't correlate exactly with the actual values. This was one of the reasons I decided to go with a non-linear method as well and use a random forest to attempt to come up with a top 10 list, however this as well did not result in the highest accuracy either given my inputs. The lack of correlation could be due to a number of factors. A plausible explanation is that the MVP award is decided by the media and they don't always vote for the statistically best player, it is a subjective decision sometimes and things like season-long storylines and biases will affect who votes for who. Regardless, it must be acknowledged that this analysis is not perfect and the correlation does not indicate that the features predict the MVP rank perfectly, however, I think the analysis shows each of the stats previously mentioned are significant and do influence how valuable a player is in the eyes of the media. If I had more time, I would have liked to explore different hyperparameters and other machine learning techniques to see if I could get a better predictive method.
